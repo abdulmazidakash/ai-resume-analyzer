@@ -18,10 +18,10 @@
   --color-badge-yellow-text: #73321b;
 }
 
-/* html,
+html,
 body {
   @apply bg-white;
-} */
+}
 
 main {
   @apply min-h-screen pt-10;
