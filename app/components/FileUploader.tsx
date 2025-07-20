@@ -36,7 +36,7 @@ const FileUploader = ({onFileSelect} : FileUploaderProps) => {
 		{file ? (
 			<div className='uploader-selected-file' onClick={(e)=> e.stopPropagation()}>
 				<div className='flex items-center space-x-3'>
-					<img src="/public/images/pdf.png" alt="pdf" className='size-10' />
+					<img src="/images/pdf.png" alt="pdf" className='size-10' />
 					<div>
 						<p className='text-sm text-gray-700 font-medium truncate max-w-xs'>
 							{file.name}
@@ -46,13 +46,13 @@ const FileUploader = ({onFileSelect} : FileUploaderProps) => {
 						</p>
 					</div>
 				</div>
-				<button className='p-2 cursor-pointer' onClick={(e)=> {onFileSelect?.(null)}}><img src="/public/icons/cross.svg" alt="remove" className='w-4 h-4' /></button>
+				<button className='p-2 cursor-pointer' onClick={(e)=> {onFileSelect?.(null)}}><img src="/icons/cross.svg" alt="remove" className='w-4 h-4' /></button>
 			</div>
 		):
 		(
 			<div>
 				<div className='mx-auto w-16 h-16 flex items-center justify-center mb-2'>
-					<img src="/public/icons/info.svg" alt="upload" className='size-20'  />
+					<img src="/icons/info.svg" alt="upload" className='size-20'  />
 				</div>
 				<p className='text-lg text-gray-500'>
 					<span className='font-semibold'>Click to Upload</span> or drag and drop your resume here
